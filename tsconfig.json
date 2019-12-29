@@ -1,7 +1,14 @@
 {
    "compilerOptions": {
-      "target": "ES5",
+      "module": "commonjs",
+      "baseUrl": "./",
+      "outDir": "build",
+      "target": "ES6",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
       "watch": true,
-      "lib": ["DOM", "ES2017"]
+      "lib": ["ES6"],
+      "allowJs": true,
+      "forceConsistentCasingInFileNames": true
    }
 }
