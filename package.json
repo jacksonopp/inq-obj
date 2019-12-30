@@ -15,7 +15,11 @@
    },
    "scripts": {
       "build": "tsc",
-      "run": "",
+      "run": "cd build && node index.js $$ cd ..",
       "test": "mocha -r ts-node/register **/*.spec.ts"
+   },
+   "dependencies": {
+      "@types/inquirer": "^6.5.0",
+      "inquirer": "^7.0.1"
    }
 }
